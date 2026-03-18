@@ -6,10 +6,10 @@ from transformers import DistilBertTokenizer
 
 MODEL_NAME = "distilbert-base-uncased"
 MAX_LENGTH = 256
-TRAIN_CSV = "Data/train.csv"
-TEST_CSV = "Data/test.csv"
-TRAIN_PKL = "Data/train_tokens.pkl"
-TEST_PKL = "Data/test_tokens.pkl"
+TRAIN_CSV = "backend/data/train.csv"
+TEST_CSV = "backend/data/test.csv"
+TRAIN_PKL = "backend/data/train_tokens.pkl"
+TEST_PKL = "backend/data/test_tokens.pkl"
 
 ## ---------------------------------------------------------------------------
 

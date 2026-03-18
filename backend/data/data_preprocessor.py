@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 
 def load_and_preprocess_data():
-    df = pd.read_csv('Data/emscad.csv')
+    df = pd.read_csv('backend/data/emscad.csv')
     
     df = df.drop_duplicates()
     df = df.dropna()
@@ -21,8 +21,8 @@ def load_and_preprocess_data():
         df, test_size=0.2, stratify=df['fraudulent'], random_state=42
     )
     
-    df_train.to_csv('Data/train.csv', index=False)
-    df_test.to_csv('Data/test.csv', index=False)
+    df_train.to_csv('backend/data/train.csv', index=False)
+    df_test.to_csv('backend/data/test.csv', index=False)
     
     return len(df_train), len(df_test)
 
