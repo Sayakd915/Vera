@@ -32,7 +32,7 @@ def tokenize_split(df: pd.DataFrame, tokenizer: DistilBertTokenizer) -> dict:
     return {
         "input_ids" : encoding['input_ids'],
         "attention_mask" : encoding['attention_mask'],
-        "labels" : (df['fraudulent'] == 't').astype(int).tolist(),
+        "labels" : df['fraudulent'].astype(int).tolist(),
     }
 
 def save_tokens(data: dict, path:str) -> None:

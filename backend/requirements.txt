@@ -2,3 +2,5 @@ transformers
 drain3
 pandas
 scikit-learn
+sentence-transformers
+hdbscan
